@@ -11,7 +11,7 @@ class TestSuperHero:
         superhero_male = SuperHero(api_url)
         superhero_male.get_max_height_superhero('Female', True)
 
-    @pytest.mark.xfail
+    # @pytest.mark.xfail
     def test_get_max_height_superhero_none_work(self, api_url):
         superhero_male = SuperHero(api_url)
         superhero_male.get_max_height_superhero('-', True)
